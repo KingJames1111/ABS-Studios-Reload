@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2024-01-09",
+  "components": {
+    "Process": {
+      "files": {
+        "index.tsx": {
+          "imports": [
+            "import { BackgroundEffects } from './BackgroundEffects'",
+            "import { ProcessHeader } from './ProcessHeader'",
+            "import { ProcessCard } from './ProcessCard'",
+            "import { processSteps } from './data'"
+          ],
+          "structure": {
+            "section": "relative py-32 overflow-hidden",
+            "container": "container px-4 mx-auto relative z-10",
+            "layout": "flex flex-col gap-12"
+          }
+        },
+        "ProcessCard.tsx": {
+          "imports": [
+            "import { Card } from '@/components/ui/card'",
+            "import { LucideIcon } from 'lucide-react'",
+            "import { cn } from '@/lib/utils'",
+            "import type { ProcessStep } from './types'"
+          ],
+          "props": {
+            "extends": "ProcessStep",
+            "additional": {
+              "isLarge": "boolean (optional)"
+            }
+          }
+        },
+        "BackgroundEffects.tsx": {
+          "imports": [
+            "import { motion } from 'framer-motion'",
+            "import { useCallback, useMemo } from 'react'",
+            "import { SeededRandom } from '@/lib/utils/seeded-random'"
+          ],
+          "config": {
+            "dots": {
+              "count": 50,
+              "seed": 42
+            }
+          }
+        },
+        "ProcessHeader.tsx": {
+          "imports": [
+            "import { motion } from 'framer-motion'"
+          ],
+          "animation": {
+            "initial": { "opacity": 0, "y": 20 },
+            "animate": { "opacity": 1, "y": 0 },
+            "duration": 0.6
+          }
+        },
+        "types.ts": {
+          "interfaces": {
+            "Feature": {
+              "title": "string",
+              "description": "string"
+            },
+            "ProcessStep": {
+              "number": "string",
+              "icon": "LucideIcon",
+              "title": "string",
+              "subtitle": "string",
+              "heading": "string",
+              "description": "string",
+              "features": "Feature[]"
+            }
+          }
+        },
+        "data.ts": {
+          "imports": [
+            "import { Brain, Target, Rocket, Sparkles } from 'lucide-react'",
+            "import type { ProcessStep } from './types'"
+          ],
+          "data": "processSteps array with 4 steps"
+        }
+      },
+      "styles": {
+        "colors": {
+          "background": "#2A0E4F",
+          "border": "hsl(var(--royal-purple-light)/0.2)",
+          "text": {
+            "primary": "text-white",
+            "secondary": "text-[hsl(var(--flame-orange))]",
+            "accent": "text-[hsl(var(--electric-green))]"
+          }
+        },
+        "typography": {
+          "heading": "font-orbitron",
+          "sizes": {
+            "large": {
+              "h3": "text-4xl",
+              "h4": "text-6xl"
+            },
+            "default": {
+              "h3": "text-3xl",
+              "h4": "text-5xl"
+            }
+          }
+        }
+      }
+    }
+  }
+}

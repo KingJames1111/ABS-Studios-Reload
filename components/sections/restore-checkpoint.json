@@ -1,0 +1,141 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2024-01-09",
+  "sections": {
+    "process": {
+      "components": {
+        "ProcessCard": {
+          "structure": {
+            "layout": "relative overflow-hidden group hover:scale-[1.02] transition-all duration-300",
+            "background": "bg-[#2A0E4F] border-[hsl(var(--royal-purple-light)/0.2)]",
+            "padding": {
+              "large": "p-12",
+              "default": "p-8"
+            }
+          },
+          "typography": {
+            "title": {
+              "large": "text-4xl",
+              "default": "text-3xl"
+            },
+            "heading": {
+              "large": "text-6xl",
+              "default": "text-5xl"
+            }
+          }
+        },
+        "descriptions": {
+          "textStyles": {
+            "emphasis": {
+              "primary": "text-2xl font-bold text-[hsl(var(--electric-green))]",
+              "secondary": "text-xl bg-gradient-to-r from-[hsl(var(--flame-orange))] to-[hsl(var(--flame-red))] bg-clip-text text-transparent font-bold",
+              "accent": "italic text-[hsl(var(--flame-orange))]",
+              "highlight": "font-semibold text-white"
+            }
+          }
+        }
+      }
+    },
+    "transitions": {
+      "ProcessToContent": {
+        "spacing": "py-24",
+        "background": {
+          "gradient": "bg-gradient-to-b from-[hsl(var(--bg-dark))] to-[hsl(var(--royal-purple-dark))]",
+          "overlay": "bg-[radial-gradient(ellipse_at_center,hsl(var(--flame-orange)/0.15),transparent_70%)]"
+        },
+        "typography": {
+          "imagine": "text-7xl md:text-8xl font-bold text-[hsl(var(--electric-green))] tracking-tight font-orbitron italic",
+          "description": "text-2xl md:text-3xl text-white leading-relaxed"
+        },
+        "animation": {
+          "container": {
+            "initial": { "opacity": 0, "y": 20 },
+            "animate": { "opacity": 1, "y": 0 },
+            "duration": 0.8
+          },
+          "imagine": {
+            "initial": { "opacity": 0, "scale": 0.9 },
+            "animate": { "opacity": 1, "scale": 1 },
+            "duration": 0.6,
+            "delay": 0.2
+          }
+        }
+      }
+    },
+    "contentPool": {
+      "components": {
+        "ContentPoolFeatures": {
+          "layout": {
+            "container": "flex flex-col gap-12 mb-16",
+            "grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          },
+          "cards": {
+            "background": "bg-[hsl(var(--royal-purple-dark))]",
+            "border": "border-[hsl(var(--royal-purple-light)/0.2)]",
+            "hover": "hover:scale-105 transition-all duration-300"
+          }
+        },
+        "ContentPoolHeader": {
+          "spacing": "text-center mb-24",
+          "badge": {
+            "background": "bg-[hsl(var(--royal-purple-light)/0.3)]",
+            "border": "border-[hsl(var(--royal-purple-light)/0.2)]"
+          }
+        }
+      }
+    }
+  },
+  "styles": {
+    "colors": {
+      "primary": {
+        "green": "hsl(var(--electric-green))",
+        "orange": "hsl(var(--flame-orange))",
+        "red": "hsl(var(--flame-red))",
+        "purple": {
+          "dark": "hsl(var(--royal-purple-dark))",
+          "light": "hsl(var(--royal-purple-light))"
+        }
+      },
+      "text": {
+        "white": "text-white",
+        "muted": "text-white/80"
+      }
+    },
+    "typography": {
+      "fonts": {
+        "heading": "font-orbitron",
+        "body": "font-inter"
+      },
+      "weights": {
+        "normal": "font-normal",
+        "medium": "font-medium",
+        "semibold": "font-semibold",
+        "bold": "font-bold"
+      }
+    },
+    "animation": {
+      "transitions": {
+        "default": "transition-all duration-300",
+        "hover": "hover:scale-105",
+        "fade": "transition-opacity duration-300"
+      }
+    }
+  },
+  "restore": {
+    "instructions": [
+      "1. Ensure all component files are in their correct locations",
+      "2. Verify all imports and dependencies are properly configured",
+      "3. Check that all styles and animations are correctly applied",
+      "4. Confirm proper nesting of components and sections",
+      "5. Validate visual hierarchy and spacing"
+    ],
+    "dependencies": {
+      "required": [
+        "framer-motion",
+        "lucide-react",
+        "tailwind-merge",
+        "clsx"
+      ]
+    }
+  }
+}
