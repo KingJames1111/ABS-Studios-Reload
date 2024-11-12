@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2024-01-09",
+  "name": "ABS Studios Website",
+  "sections": {
+    "order": [
+      "Hero",
+      "ImagineTransition",
+      "Process",
+      "ProcessToContent",
+      "ContentPool",
+      "Testimonials",
+      "SuccessToFAQ",
+      "FAQ",
+      "CTA",
+      "Footer"
+    ]
+  },
+  "dependencies": {
+    "required": [
+      "framer-motion",
+      "lucide-react",
+      "tailwind-merge",
+      "clsx"
+    ]
+  },
+  "restore": {
+    "instructions": [
+      "1. Install dependencies from package.json",
+      "2. Copy all section components to their directories",
+      "3. Verify file structure matches documentation",
+      "4. Start development server",
+      "5. Validate all sections and transitions"
+    ]
+  }
+}

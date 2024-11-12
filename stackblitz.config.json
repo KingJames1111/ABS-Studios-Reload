@@ -1,0 +1,6 @@
+{
+  "installDependencies": true,
+  "startCommand": "npm run dev",
+  "compileSandbox": false,
+  "template": "node"
+}
