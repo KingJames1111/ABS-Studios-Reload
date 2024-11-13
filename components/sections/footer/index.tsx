@@ -77,7 +77,7 @@ export function Footer() {
               <div className="flex items-center gap-3 text-[hsl(var(--text-muted))]">
                 <Mail className="w-5 h-5 text-[hsl(var(--flame-orange))] flex-shrink-0" />
                 <a href="mailto:YourFuture@ABS.Studios" className="hover:text-white transition-colors">
-                  YourFuture@ABS.Studios
+                  YourFuture@ABS.Studio
                 </a>
               </div>
               <div className="flex items-center gap-3 text-[hsl(var(--text-muted))]">
