@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://absstudios.com';
+  const baseUrl = 'https://www.abs.studio';
   
   const routes = [
     '',
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: route === '' ? 'daily' : 'weekly',
+    changeFrequency: route === '' ? 'daily' : 'weekly' as 'daily' | 'weekly', 
     priority: route === '' ? 1 : 0.8,
   }));
 

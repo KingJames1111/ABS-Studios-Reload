@@ -5,7 +5,7 @@ export function FinalStep() {
     <div className="relative">
       {/* Previous background styles remain the same */}
       
-      <Card className="relative bg-gradient-to-br from-[hsl(var(--royal-purple-dark))] to-[hsl(var(--royal-purple-dark)/0.9)] border-[hsl(var(--royal-purple-light)/0.3)] shadow-2xl shadow-[hsl(var(--flame-orange)/0.1)] transform transition-all duration-500 hover:scale-[1.01] overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[hsl(var(--royal-purple-dark))] to-[hsl(var(--royal-purple-dark)/0.9)] border-[hsl(var(--royal-purple-light)/0.3)] shadow-2xl shadow-[hsl(var(--flame-orange)/0.1)] transform transition-all duration-500 hover:scale-[1.01] overflow-hidden">
         {/* Previous background effects remain the same */}
         
         <div className="relative z-10 p-12">
@@ -71,7 +71,7 @@ export function FinalStep() {
             </div>
           </div>
         </div>
-      </Card>
+      </div>
     </div>
   );
 }

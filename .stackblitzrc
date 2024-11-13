@@ -2,6 +2,6 @@
   "installDependencies": true,
   "startCommand": "npm run dev",
   "env": {
-    "NEXT_PUBLIC_SITE_URL": "https://absstudios.com"
+    "NEXT_PUBLIC_SITE_URL": "https://abs.studio"
   }
 }
