@@ -1,7 +1,7 @@
 'use client';
 
 import { Card } from "@/components/ui/card";
-import { CONTENT_STANDARDS } from "@/lib/core/content-standards";
+import { A11Y_STANDARDS } from "@/lib/core/content-standards";
 import { cn } from "@/lib/utils";
 
 interface CaseStudyCardProps {

@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { Card } from "@/components/ui/card";
-import { CONTENT_STANDARDS } from "@/lib/core/content-standards";
+import { A11Y_STANDARDS } from "@/lib/core/content-standards";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Testimonial {
-  type: keyof typeof CONTENT_STANDARDS.testimonials.types;
+  //type: keyof typeof A11Y_STANDARDS.testimonials.types;
   content: {
     quote: string;
     results: string;
