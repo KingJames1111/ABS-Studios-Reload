@@ -4,8 +4,8 @@ export const SCHEMA_CONFIG = {
     "@type": "Organization",
     "@context": "https://schema.org",
     name: "ABS Studios",
-    url: "https://absstudios.com",
-    logo: "https://absstudios.com/logo.png",
+    url: "https://abs.studio",
+    logo: "https://abs.studio/logo.png",
     sameAs: [
       "https://twitter.com/absstudios",
       "https://linkedin.com/company/abs-studios"

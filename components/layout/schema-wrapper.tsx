@@ -1,6 +1,6 @@
 'use client';
 
-import { SCHEMA_CONFIG } from '@/lib/core/seo';
+import { SCHEMA_CONFIG } from '@/lib/core/seo/schema';
 
 interface SchemaWrapperProps {
   type: keyof typeof SCHEMA_CONFIG;

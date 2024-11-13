@@ -12,14 +12,17 @@ export function SEOWrapper({ children, page, customMeta }: SEOWrapperProps) {
   
   return (
     <>
-      <title>{customMeta?.title || pageMeta.title}</title>
+      <title>{String(customMeta?.title || pageMeta.title)}</title>
       <meta 
         name="description" 
         content={customMeta?.description || pageMeta.description} 
       />
       <meta 
         name="keywords" 
-        content={customMeta?.keywords || pageMeta.keywords.join(', ')} 
+        //content={customMeta?.keywords || pageMeta.keywords.join(', ')} 
+        content={Array.isArray(customMeta?.keywords)
+          ? customMeta.keywords.join(', ') 
+          : customMeta?.keywords || pageMeta.keywords.join(', ')} 
       />
       {children}
     </>

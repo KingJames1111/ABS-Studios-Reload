@@ -1,6 +1,6 @@
 'use client';
 
-import { SEMANTIC_STRUCTURE } from '@/lib/core/seo';
+import { SEMANTIC_STRUCTURE } from '@/lib/core/seo/semantic-structure';
 import { cn } from '@/lib/utils';
 
 interface SemanticSectionProps {
