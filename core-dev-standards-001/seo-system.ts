@@ -99,7 +99,7 @@ export const seoImplementation = {
     validation: [
       'Verify all pages have unique titles and descriptions',
       'Check canonical URLs are correctly set',
-      'Validate structured data using Google's testing tool',
+      'Validate structured data using Google\'s testing tool',
       'Ensure all images have alt text',
       'Verify meta robots tags are correct'
     ],
