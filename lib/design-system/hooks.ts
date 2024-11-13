@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
-import { A11Y_STANDARDS } from './index';
+//import { DESIGN_SYSTEM } from './index';
+import { A11Y_STANDARDS } from '@/lib/core/content-standards';
 
 // Custom hook for accessing design tokens with type safety
 export const useDesignSystem = () => {

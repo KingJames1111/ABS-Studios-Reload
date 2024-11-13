@@ -1,4 +1,5 @@
-import { DESIGN_SYSTEM } from './index';
+//import { DESIGN_SYSTEM } from './index';
+import { A11Y_STANDARDS } from '@/lib/core/content-standards';
 
 // Process section specific content and structure
 export const PROCESS_CONTENT = {
