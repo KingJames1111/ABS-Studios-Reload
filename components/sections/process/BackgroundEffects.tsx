@@ -4,10 +4,12 @@ import { motion } from 'framer-motion';
 import { useCallback, useMemo } from 'react';
 import { SeededRandom } from '@/lib/utils/seeded-random';
 
+//import  seedrandom  from 'seedrandom';
+
 export function BackgroundEffects() {
   const dots = useMemo(() => {
     //const random = new SeededRandom(42);
-    const random = SeededRandom(42);
+    const random = new SeededRandom(42)
     return Array.from({ length: 50 }, (_, i) => ({
       id: i,
       left: `${random.range(0, 100)}%`,

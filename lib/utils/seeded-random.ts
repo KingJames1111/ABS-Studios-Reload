@@ -2,7 +2,7 @@ export class SeededRandom {
   private seed: number;
   private static instance: SeededRandom;
 
-  private constructor(seed: number) {
+  public constructor(seed: number) {
     this.seed = seed;
   }
 
