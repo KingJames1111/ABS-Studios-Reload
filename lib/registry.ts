@@ -4,7 +4,8 @@ import { Hero } from '@/components/sections/hero';
 import { FAQ } from '@/components/sections/faq';
 import { CTA } from '@/components/sections/cta';
 import { Testimonials } from '@/components/sections/testimonials';
-import { DESIGN_SYSTEM } from './design-system';
+//import { DESIGN_SYSTEM } from './design-system';
+import { A11Y_STANDARDS } from '@/lib/core/content-standards';
 
 // Core components that should not be modified
 export const CORE_COMPONENTS = {
@@ -19,4 +20,4 @@ export const CORE_COMPONENTS = {
 Object.freeze(CORE_COMPONENTS);
 
 // Export design system for global use
-export { DESIGN_SYSTEM };
+export { A11Y_STANDARDS };
